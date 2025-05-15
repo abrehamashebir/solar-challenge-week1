@@ -31,6 +31,8 @@ jobs:
         pip list
         python --version
         
-    - name: Run basic syntax check
+    
+    - name: Run tests
+      timeout-minutes: 5  # Separate test timeout
       run: |
-        python -m py_compile *.py
+        python -m pytest -v
