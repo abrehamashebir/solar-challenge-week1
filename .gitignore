@@ -8,6 +8,8 @@ __pycache__/
 *.csv
 .ipynb_checkpoints/
 # Distribution / packaging
+data/
+figures/
 .Python
 build/
 develop-eggs/
