@@ -4,6 +4,34 @@ A solar radiation monitoring and analysis system for three solar radiation sites
 
 ## Development Environment Setup
 
+### Project Structure
+solar-challenge-week1$ tree
+├── app
+│   ├── __init__.py
+│   ├── main.py
+│   └── utils.py
+├── data
+│   ├── benin_clean.csv
+│   ├── sierraleone_clean.csv
+│   └── togo_clean.csv
+├── datasets
+│   └── combined.csv
+├── figures
+├── LICENSE
+├── notebooks
+│   ├── bennin_eda.ipynb
+│   ├── compare_countries.ipynb
+│   ├── __init__ py
+│   ├── sierraleone.ipynb
+│   └── togo_eda.ipynb
+├── README.md
+├── requirements.txt
+├── scripts
+│   └── __init__.py
+├── src
+│   └── __init__.py
+└── tests
+    └── __init__.py
 ### Prerequisites
 - Python 3.8+
 - Git
