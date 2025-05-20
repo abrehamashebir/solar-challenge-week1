@@ -63,6 +63,6 @@ pip install -r requirements.txt
 ```
 ### 1. To run streamlit app
 ```bash
-cd solar-challenge-week1/app
+cd /app
 streamlit run main.py
 ```
