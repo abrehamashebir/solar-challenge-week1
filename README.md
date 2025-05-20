@@ -5,6 +5,7 @@ A solar radiation monitoring and analysis system for three solar radiation sites
 ## Development Environment Setup
 
 ### Project Structure
+``` bash
 solar-challenge-week1$ tree
 ├── app
 │   ├── __init__.py
@@ -32,6 +33,8 @@ solar-challenge-week1$ tree
 │   └── __init__.py
 └── tests
     └── __init__.py
+```
+
 ### Prerequisites
 - Python 3.8+
 - Git
