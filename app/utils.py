@@ -3,9 +3,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, 'data')
-import os
-print(os.path.join(DATA_DIR, 'benin_clean.csv'))
-print(os.path.exists(os.path.join(DATA_DIR, 'benin_clean.csv')))
 
 def load_data():
     benin = pd.read_csv(os.path.join(DATA_DIR,'benin_clean.csv'))
