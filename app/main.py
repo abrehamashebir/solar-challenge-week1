@@ -3,7 +3,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 import os, sys
-
+current_path = os.getcwd()
+parent_dir = os.path.dirname(current_path)
+sys.path.insert(0, parent_dir)
 # Set the page configuration
 from utils import load_data, get_summary_table
 st.set_page_config(page_title="Solar Potential Dashboard", page_icon=":guardsman:", layout="wide")
