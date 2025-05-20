@@ -27,6 +27,33 @@ fig, ax = plt.subplots()
 sns.boxplot(data=df_filtered, x='Country', y=selected_metric, palette='Set2', ax=ax)
 st.pyplot(fig)
 
+# --- Barplot ---
+st.subheader(f"{selected_metric} Distribution by Country")
+fig, ax = plt.subplots()
+sns.barplot(data=df_filtered, x='Country', y='GHI', palette='Set2', ax=ax)
+st.pyplot(fig)
+
+# --- histplot ---
+st.subheader(f"{selected_metric} Distribution by Country")
+fig, ax = plt.subplots()
+sns.histplot(df['GHI'], kde=True, bins=30, ax=ax, color='blue')
+ax.set_title(f"Distribution of {selected_metric} by Country")
+ax.set_xlabel(selected_metric)
+ax.set_ylabel("Frequency")
+# Show the plot in Streamlit
+st.pyplot(fig)
+
+# --- scatterplot ---
+# selected_metric should come from a widget like st.selectbox
+selected_metric = st.selectbox("Select metric(X)", ["GHI", "DNI", "DHI"])
+selected_metric1 = st.selectbox("Select metric (Y)", ["GHI", "DNI", "DHI"])
+st.subheader(f"{selected_metric} Distribution by Country")
+
+fig, ax = plt.subplots()
+sns.scatterplot(x=selected_metric, y=selected_metric1, data=df, ax=ax)
+ax.set_title(f"Scatterplot of GHI by Country")
+st.pyplot(fig)
+
 # --- Summary Table ---
 st.subheader("📊 Summary Statistics")
 summary = get_summary_table(df_filtered)
