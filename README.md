@@ -56,6 +56,11 @@ source venv/bin/activate
 python -m venv venv
 .\venv\Scripts\activate
 ```
+for linux
+ ```bash
+python -m venv venv
+source .\venv\bin\activate
+```
 ### 3. Install Python Dependencies
 ```bash
 pip install --upgrade pip
