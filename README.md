@@ -61,7 +61,7 @@ python -m venv venv
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-## 1. To run streamlit app
+### 1. To run streamlit app
 ```bash
 cd solar-challenge-week1/app
 streamlit run main.py
