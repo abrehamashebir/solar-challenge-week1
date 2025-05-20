@@ -1,9 +1,12 @@
 import pandas as pd
+import os
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, 'data')
 def load_data():
-    benin = pd.read_csv('data/benin_clean.csv')
-    sierra_leone = pd.read_csv('data/sierraleone_clean.csv')
-    togo = pd.read_csv('data/togo_clean.csv')
+    benin = pd.read_csv(os.path.join(DATA_DIR,'benin_clean.csv'))
+    sierra_leone = pd.read_csv(os.path.join(DATA_DIR,'sierraleone_clean.csv'))
+    togo = pd.read_csv(os.path.join(DATA_DIR,'togo_clean.csv'))
 
     benin['Country'] = 'Benin'
     sierra_leone['Country'] = 'Sierra Leone'
